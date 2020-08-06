@@ -6,7 +6,15 @@ namespace HelloApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            "Zhenya".AskAboutVerstka("Kogda zhe budet sdelana verstka?");
+        }
+    }
+
+    public static class AskExtention
+    {
+        public static void AskAboutVerstka(this string name, string message)
+        {
+            Console.WriteLine($"{name}, {message}?");
         }
     }
 }
